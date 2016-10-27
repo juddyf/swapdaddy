@@ -1,0 +1,37 @@
+{
+	"manifest_version": 2,
+	"name": "SwapDaddy",
+	"description": "Chrome extension that lets you switch between Godaddy accounts",
+	"version": "0.0.1",
+	"permissions": [
+		"storage",
+		"https://*.godaddy.com/*",
+		"https://*.dev-godaddy.com/*",
+		"https://*.test-godaddy.com/*",
+		"cookies",
+		"tabs",
+		"activeTab"
+	],
+	"icons": {
+		"16": "img/icon-16.png",
+		"48": "img/icon-48.png",
+		"128": "img/icon-128.png"
+	},
+	"browser_action": {
+		"default_icon": {
+			"19": "img/icon-48.png",
+			"38": "img/icon-48.png"
+		},
+		"default_popup": "popup.html"
+	},
+	"content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+	"web_accessible_resources": [
+		"img/icon-128.png"
+	],
+  "content_scripts": [{
+      "matches": ["https://*.godaddy.com/*",
+				"https://*.dev-godaddy.com/*",
+				"https://*.test-godaddy.com/*"],
+      "js":      ["js/content.js"]
+  }]
+}

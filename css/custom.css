@@ -1,0 +1,101 @@
+/**
+ * Chrome Extension Twitter Bootstrap 3 Template
+ * Custom CSS
+ *
+ */
+a, a:active, a:visited {
+  color: #006c2a;
+}
+
+a:hover {
+  color: #004b1d;
+}
+
+body {			/* Change width and height to own preferences */
+	width: 250px;
+  height: 404px;
+	overflow-x: hidden;
+  padding: 5px;
+}
+
+section {
+  width: 240px;
+}
+
+.btn-success {
+  background-color: #00a63f;
+}
+
+.btn-success:hover {
+  background-color: #008031;
+}
+
+.text-muted {
+  color: #777676;
+}
+
+.glyphicon-trash {
+  margin-left: 25px;
+}
+
+.options {
+  width: 120px;
+}
+
+.glyphicon-trash {
+  margin-left: 25px;
+}
+
+.options {
+  width: 120px;
+}
+
+.fixed-bottom {
+  position:fixed;
+  top: 325px;
+  height: 25px;
+  width: 240px;
+  margin: 0;
+  text-align: center;
+  padding: auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.title {
+  padding: 5px;
+  margin-top: 8px;
+}
+
+form {
+  margin: 20px 10px;
+}
+
+.alert-warning {
+  display:none;
+  margin: 10px;
+}
+
+.shown {
+  display: block;
+}
+
+.name, a {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.table>tbody>tr.active>td, .table>tbody>tr>td.active {
+  background-color: #beffd7;
+}
+
+/* Basic style tweaks */
+section { padding: 5px;}
+.navbar { margin-bottom: 2px; }
+
+/* Scroll Bar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); }
+::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb:window-inactive  { background: #666; }
